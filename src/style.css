@@ -1,0 +1,19 @@
+@font-face {
+  font-family: montserrat;
+  src: url("./assets/Montserrat-Bold.otf") format("otf");
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: pink;
+  font-family: montserrat;
+  letter-spacing: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
