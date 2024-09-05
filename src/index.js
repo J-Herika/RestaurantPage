@@ -1,7 +1,8 @@
 import "./reset.css";
 import "./style.css";
 import getNavBar from "./navbar.js";
-import renderMain from "./main.js";
+import renderMain from "./home-page.js";
+import renderMenu from "./menu-page.js";
 
 getNavBar().homeBtn.addEventListener("click", (e) => getToPage(e));
 getNavBar().menuBtn.addEventListener("click", (e) => getToPage(e));
@@ -15,6 +16,7 @@ function getToPage(e) {
       break;
     case "Menu":
       console.log("Menu");
+      renderMenu();
       break;
     case "About":
       console.log("about");

@@ -50,6 +50,7 @@ header {
   gap: 4rem;
 }
 
+/* HOME PAGE */
 .header-div {
   text-align: center;
 }
@@ -58,4 +59,14 @@ header {
 }
 .main-p {
   width: 72ch;
+}
+
+/* MENU PAGE */
+.menu-items-container {
+  text-align: center;
+}
+
+.menu-items {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
