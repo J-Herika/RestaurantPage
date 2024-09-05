@@ -13,6 +13,7 @@ header {
   height: 100%;
   display: grid;
   grid-template-rows: 1fr 9fr;
+  gap: 3rem;
 }
 
 #navbar {
@@ -40,4 +41,21 @@ header {
   border: var(--color-sub-sub);
   border-radius: 0.5rem;
   cursor: pointer;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.header-div {
+  text-align: center;
+}
+.home-main-section {
+  text-align: center;
+}
+.main-p {
+  width: 72ch;
 }
