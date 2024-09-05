@@ -1,19 +1,19 @@
-const homeBtnEl = document.createElement("button");
-const menuBtnEl = document.createElement("button");
-const aboutBtnEl = document.createElement("button");
-const buttonList = [];
+const homeBtn = document.createElement("button");
+const menuBtn = document.createElement("button");
+const aboutBtn = document.createElement("button");
 
 function designButtons(button, content, className) {
   button.textContent = content;
   button.classList.toggle(className);
-  buttonList.push(button);
 }
 
-designButtons(homeBtnEl, "Home", "btn");
-designButtons(menuBtnEl, "Menu", "btn");
-designButtons(aboutBtnEl, "About", "btn");
+designButtons(homeBtn, "Home", "btn");
+designButtons(menuBtn, "Menu", "btn");
+designButtons(aboutBtn, "About", "btn");
 
 export default function getNavBar() {
   const navbarEl = document.querySelector("#navbar");
-  navbarEl.append(menuBtnEl, homeBtnEl, aboutBtnEl);
+  navbarEl.append(menuBtn, homeBtn, aboutBtn);
+
+  return { homeBtn, menuBtn, aboutBtn };
 }
