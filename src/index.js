@@ -8,7 +8,7 @@ import renderAbout from "./about.js";
 getNavBar().homeBtn.addEventListener("click", (e) => getToPage(e));
 getNavBar().menuBtn.addEventListener("click", (e) => getToPage(e));
 getNavBar().aboutBtn.addEventListener("click", (e) => getToPage(e));
-
+// for pusblishing it ..
 function getToPage(e) {
   switch (e.target.textContent) {
     case "Home":
