@@ -1,19 +1,34 @@
-@font-face {
-  font-family: montserrat;
-  src: url("./assets/Montserrat-Bold.otf") format("otf");
+:root {
+  --color-main: #c3c3e6;
+  --color-sub: #546a7b;
+  --color-sub-sub: whitesmoke;
 }
 
-html,
 body {
+  font-family: montserrat;
+  background-color: var(--color-sub);
+  color: var(--color-sub-sub);
+}
+header {
   height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 9fr;
 }
 
-body {
-  background-color: pink;
-  font-family: montserrat;
-  letter-spacing: 0.5rem;
-
+#navbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
+}
+
+.btn {
+  font-family: montserrat;
+  font-weight: 700;
+  background-color: var(--color-sub);
+  color: var(--color-sub-sub);
+  font-size: 1.3rem;
+  padding: 0.6em 1.6em;
+  border: none;
+  border-bottom: 0.1rem solid var(--color-sub-sub);
 }

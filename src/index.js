@@ -1,7 +1,5 @@
-import animeGirl from "./assets/Dual.jpg";
+import "./reset.css";
 import "./style.css";
+import getNavBar from "./navbar.js";
 
-const img = document.createElement("img");
-img.src = animeGirl;
-img.setAttribute("style", "width: 40%");
-document.body.append(img);
+getNavBar();
