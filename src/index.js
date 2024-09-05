@@ -3,6 +3,7 @@ import "./style.css";
 import getNavBar from "./navbar.js";
 import renderMain from "./home-page.js";
 import renderMenu from "./menu-page.js";
+import renderAbout from "./about.js";
 
 getNavBar().homeBtn.addEventListener("click", (e) => getToPage(e));
 getNavBar().menuBtn.addEventListener("click", (e) => getToPage(e));
@@ -20,6 +21,7 @@ function getToPage(e) {
       break;
     case "About":
       console.log("about");
+      renderAbout();
       break;
   }
 }

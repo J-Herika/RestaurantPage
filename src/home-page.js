@@ -8,6 +8,8 @@ function createHeader() {
   titleH1.textContent = "Saikō no resutoran e yōkoso";
   titleH3.textContent = "(Welcome to the Best Restaurant)";
   titleH1.classList.toggle("heading-h1");
+  titleH1.classList.toggle("heading");
+
   titleH3.classList.toggle("heading-h3");
   headingDiv.classList.add("header-div");
 

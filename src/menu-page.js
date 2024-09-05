@@ -6,7 +6,7 @@ function createHeader() {
 
   header.textContent = "Menu";
 
-  header.classList.toggle("menu-heading");
+  header.classList.toggle("heading");
   headerDiv.classList.add("menu-header");
 
   headerDiv.append(header);
